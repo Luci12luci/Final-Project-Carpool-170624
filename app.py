@@ -3,9 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 from flask import jsonify
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://u1ai5zsuzpe6y74uwyqu:0BacMZwIRVg5rpsOcndFG1pcHSUba5@by1wvfyyi5kgu1euhyko-postgresql.services.clever-cloud.com:50013/by1wvfyyi5kgu1euhyko"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-db = SQLAlchemy(app)
+
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://u1ai5zsuzpe6y74uwyqu:0BacMZwIRVg5rpsOcndFG1pcHSUba5@by1wvfyyi5kgu1euhyko-postgresql.services.clever-cloud.com:50013/by1wvfyyi5kgu1euhyko"
+# app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+# db = SQLAlchemy(app)
 
 users = {
     'john': 'password123',
